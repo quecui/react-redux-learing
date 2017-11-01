@@ -17,6 +17,8 @@ export default class FriendListApp extends Component {
   }
 
   render () {
+      alert(1);
+      alert(this.props.friends);
     const { friendlist: { friendsById }, dispatch } = this.props;
     const actions = bindActionCreators(FriendsActions, dispatch);
 
